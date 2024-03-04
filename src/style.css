@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--color-main-header: #ffffff;
+		--color-border: #f7bd00;
+		--color-text-gol: #f7bd00;
+		--color-bg-gol: #5e1675;
+		--color-text-white: #ffffff;
+		--color-h2-color: #5b0888;
+		--color-text-gray: #61677a;
+		--color-background: #eeeded;
+		--color-gold-bg: #ffd95a;
+		--color-bg-lightp: #b931fc;
+	}
+}
+
+header {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1038%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(118%2c 35%2c 170%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c332.127C63.549%2c327.703%2c120.352%2c302.719%2c179.748%2c279.693C254.573%2c250.686%2c345.632%2c244.159%2c393.351%2c179.637C442.916%2c112.619%2c460.181%2c16.461%2c432.6%2c-62.199C405.751%2c-138.771%2c311.479%2c-162.91%2c253.378%2c-219.553C201.716%2c-269.918%2c181.313%2c-362.551%2c110.474%2c-376.242C38.795%2c-390.095%2c-16.395%2c-313.22%2c-83.59%2c-284.68C-140.865%2c-260.354%2c-208.341%2c-262.119%2c-255.043%2c-220.996C-304.894%2c-177.101%2c-335.26%2c-115.106%2c-349.777%2c-50.29C-365.057%2c17.932%2c-366.864%2c90.702%2c-339.241%2c154.926C-311.32%2c219.842%2c-259.219%2c273.171%2c-196.583%2c305.889C-136.776%2c337.129%2c-67.312%2c336.813%2c0%2c332.127' fill='%234d176f'%3e%3c/path%3e%3cpath d='M1440 942.278C1511.804 929.355 1588.706 925.3199999999999 1644.783 878.649 1698.37 834.05 1705.267 757.734 1736.5810000000001 695.444 1769.442 630.077 1827.37 576.348 1833.41 503.436 1840.12 422.432 1831.313 327.813 1771.603 272.665 1711.99 217.606 1613.35 257.144 1536.995 229.66500000000002 1453.143 199.488 1390.739 76.25 1306.481 105.27499999999998 1220.67 134.83499999999998 1234.4850000000001 265.912 1194.808 347.53999999999996 1167.145 404.452 1130.675 453.045 1108.614 512.354 1080.902 586.854 1036.69 659.907 1049.433 738.366 1063.604 825.6120000000001 1103.2939999999999 921.097 1181.647 962.005 1259.792 1002.804 1353.24 957.893 1440 942.278' fill='%239c3ed7'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1038'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+main {
+	background-image: url(/src/asset/images/wave.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: scroll;
+	background-color: #fefffe;
+	background-position: center;
+}
+
+#main p {
+	display: inline;
+	padding: 10px;
+	line-height: 33px;
+	font-weight: 800;
+	font-size: 25px;
+	/* word-spacing: 0; */
+	line-height: 30px;
+	/* text-align: left; */
+}
+body {
+	overflow-x: hidden;
+}
+#img {
+	width: 55%;
+	position: absolute;
+	top: 20px;
+	/* backdrop-filter: drop-shadow(2px 10px 5px red); */
+}
+#peace h2 {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 32px;
+	text-align: center;
+}
+
+#peace p {
+	font-size: 18px;
+	line-height: 36px;
+	text-align: center;
+	color: #ffffff;
+}
+.img {
+	width: 50%;
+}
+.img2 {
+	width: 40%;
+	height: 40%;
+}
+@media screen and (max-width: 1000px) {
+	main {
+		background-image: none;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-attachment: scroll;
+		background-color: #fefffe;
+		background-position: center;
+	}
+	#peace p {
+		font-size: 18px;
+		line-height: 36px;
+		text-align: center;
+		color: #646464;
+	}
+
+	#peace h2 {
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 32px;
+		color: #646464;
+		text-align: center;
+	}
+}
+
+.star-platinum {
+	position: absolute;
+	bottom: -540px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: fit-content;
+	right: 9px;
+	padding: 9px;
+	z-index: 10;
+}
+.star-platinum a {
+	color: gold;
+	padding: 10px;
+	background-color: purple;
+}
+.few {
+	border-radius: 20px;
+	/* text-align: left; */
+	margin: 0;
+	padding: 0;
+	width: fit-content;
+	top: 10px;
+	position: relative;
+	right: 29%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.few a:hover {
+	text-decoration-color: #f7bd00;
+}
+.headerLogo {
+	display: none;
+}
